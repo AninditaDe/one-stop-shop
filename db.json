@@ -51,7 +51,7 @@
     {
       "sys": { "id": "7" },
       "fields": {
-        "title": "couch",
+        "title": "cotswold",
         "price": 45.99,
         "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } }
       }
@@ -59,7 +59,7 @@
     {
       "sys": { "id": "8" },
       "fields": {
-        "title": "table",
+        "title": "trevi fountain, Rome",
         "price": 33.99,
         "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } }
       }

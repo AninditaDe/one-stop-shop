@@ -77,7 +77,7 @@ class UI
                     event.target.disabled = true
                     //get the item from the products
                     let cartItem = {...Storage.getProduct(id), amount: 1}
-                    console.log(cartItem)
+                    //console.log(cartItem)
                     //add the item into the cart
                     cart = [...cart, cartItem]
                     //save the cart into the local storage
@@ -113,7 +113,7 @@ class UI
                 <div>
                     <h4>${cartItem.title}</h4>
                     <h5>${cartItem.price}</h5>
-                    <span class="remove-item" data-id =${cartItem.id}>remove</span>
+                    <span class="remove-item" data-id =${cartItem.length}>remove</span>
                 </div>
                 <div>
                     <i class="fa fa-chevron-up" data-id = ${cartItem.id}></i>
@@ -121,6 +121,8 @@ class UI
                     <i class="fa fa-chevron-down" data-id = ${cartItem.id}></i>
                 </div>
         </div>`
+        console.log(cartItem.lentgh)
+        console.log(cartItem)
         cartContent.appendChild(div)
     }
     showCart(){
@@ -192,7 +194,7 @@ class UI
     {
         let cartItems = cart.map(item => item.id)
         cartItems.forEach(id => this.removeItem(id))
-        console.log(cartContent.children);
+        //console.log(cartContent.children);
         
         while(cartContent.children.length > 0)
         {
